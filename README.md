@@ -12,12 +12,12 @@ The pricing engine operates on a two-asset basket model governed by multi-dimens
 | Parameter | Symbol | Baseline Value |
 | :--- | :---: | :---: |
 | **Weights of Asset  1 and Asset 2** | $\alpha, \beta$ | $1.0 , 1.0$ |
-| **Initial Spot prices** | $S_1(0), S_2(0)$ | $1.0 , 1.0$ |
+| **Initial Spot Prices** | $S_1(0), S_2(0)$ | $1.0 , 1.0$ |
 | **Volatilities** | $\sigma_1, \sigma_2$ | $0.35 , 0.4$ |
-| **Correlation coefficient** | $\rho$ | $0.3$ |
+| **Correlation Coefficient** | $\rho$ | $0.3$ |
 | **Risk-Free Interest Rate** | $r$ | $0.01$ |
-| **Time to maturity** | $T$ | $2.0$ (years) |
-| **Strike price** | $K$ | $2.0$ |
+| **Time to Maturity** | $T$ | $2.0$ (years) |
+| **Strike Price** | $K$ | $2.0$ |
 | **Number of MC Paths** | $N$ | $100,000$ |
 ---
 
