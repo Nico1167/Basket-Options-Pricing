@@ -4,21 +4,21 @@ A high-performance quantitative finance engine developed in Python to price mult
 
 ---
 
-## Core Mathematical Parameters
+## Model Parameters
 
-The pricing engine operates on a two-asset basket model governed by multi-dimensional Brownian Motion with the following parameters:
+The pricing engine operates on a two-asset basket model governed by multi-dimensional Brownian Motion with the following reference parameters, unless stated otherwise (e.g., when graphing sensitivities):
 
-| Parameter | Script Variable | Financial Definition |
-| :--- | :--- | :--- |
-| $\alpha, \beta$ | `alpha`, `beta` | Respective weights of Asset 1 and Asset 2 in the basket |
-| $S_1(0), S_2(0)$ | `S1_0`, `S2_0` | Initial spot prices of the underlying assets |
-| $\sigma_1, \sigma_2$ | `sigma1`, `sigma2` | Annualized volatilities of Asset 1 and Asset 2 |
-| $\rho$ | `rho` | Cross-correlation coefficient between the asset returns |
-| $r$ | `r` | Constant risk-free annual interest rate |
-| $T$ | `T` | Time to maturity (expressed in years) |
-| $K$ | `K` | Option strike price |
-| $N$ | `Sample_size` | Total number of generated Monte Carlo simulation paths |
 
+| Parameter | Symbol | Baseline Value |
+| :--- | :---: | :---: |
+| **Weights of Asset  1 and Asset 2** | $\alpha, \beta$ | $1.0 , 1.0$ |
+| **Initial Spot prices** | $S_1(0), S_2(0)$ | $1.0 , 1.0$ |
+| **Volatilities** | $\sigma_1, \sigma_2$ | $0.35 , 0.4$ |
+| **Correlation coefficient** | $\rho$ | $0.3$ |
+| **Risk-Free Interest Rate** | $r$ | $0.01$ |
+| **Time to maturity** | $T$ | $2.0$ (years) |
+| **Strike price** | $K$ | $2.0$ |
+| **Number of MC Paths** | $N$ | $100,000$ |
 ---
 
 ## Pricing Methodologies
